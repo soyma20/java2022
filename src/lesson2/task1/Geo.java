@@ -1,6 +1,13 @@
 package lesson2.task1;
 
+import lombok.*;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Geo {
-    double lat;
-    double lng;
+    private double lat;
+    private double lng;
 }

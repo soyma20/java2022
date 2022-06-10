@@ -1,7 +1,14 @@
 package lesson2.task1;
 
+import lombok.*;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Company {
-    String name;
-    String catchPhrase;
-    String bs;
+    private String name;
+    private String catchPhrase;
+    private String bs;
 }
