@@ -9,7 +9,7 @@ public class Main {
         printable.add(new Magazine());
         printable.add(new Magazine());
         printable.add(new Magazine());
-        System.out.println(printable.size());
+        System.out.println(printable);
 
     }
 }
