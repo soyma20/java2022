@@ -47,8 +47,6 @@ public class Main {
 
         zooClub.deletePetInEveryPerson(new Pet("tuzic"));
         zooClub.showZooClub();
-        System.out.println("-");
-        zooClub.showZooClub();
 
 
     }
