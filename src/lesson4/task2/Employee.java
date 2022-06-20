@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 @Data
 @NoArgsConstructor
-public class Employee implements Comparable<Employee>{
+public class Employee implements Comparable<Employee> {
     private int id;
     private String name;
     private String email;
@@ -24,14 +24,15 @@ public class Employee implements Comparable<Employee>{
         this.gender = gender;
 
 
-        this.car = new Car(model,year,power);
+        this.car = new Car(model, year, power);
     }
-    public void addSkill(Skill skill){
+
+    public void addSkill(Skill skill) {
         this.skills.add(skill);
     }
 
     @Override
     public int compareTo(Employee o) {
-        return this.skills.size()-o.skills.size();
+        return this.skills.size() - o.skills.size();
     }
 }
