@@ -1,7 +1,6 @@
-package Lesson5.task2;
+package lesson5.task2;
 
 import java.util.Arrays;
-import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
