@@ -1,9 +1,8 @@
-package Lesson5.task3;
+package lesson5.task3;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,8 +23,10 @@ public class Main {
             car.setPowerOfEngine(newPowerOfEngine);
             return car;
         }).collect(Collectors.toList());
+
         List<Car> secondHalfOfCars = cars.stream().skip(4).collect(Collectors.toList());
         collect.addAll(secondHalfOfCars);
+
         collect.stream().map(car -> {
             if (car.getOwner().getExperience() < 5 && car.getOwner().getAge() > 25) {
                 int newExp = car.getOwner().getExperience() + 1;
